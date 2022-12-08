@@ -1,0 +1,408 @@
+@font-face {
+  font-family: 'Ogg-Roman';
+  src: local('Ogg-Roman'), url('police/Ogg-Roman.otf') format('opentype');
+}
+
+body {
+  background-color: black;
+  opacity: 0.9a;
+}
+
+/* cursor */
+
+cursor {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 3px solid #2687be;
+  transition: all 40ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 100000;
+  opacity: .6;
+  box-shadow: #2687be;
+}
+
+.cursor2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #2687be;
+  opacity: .6;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 1000000;
+}
+
+
+
+/* -------------debut header-------------- */
+
+* {
+  padding: O;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+header {
+  background-color: black;
+  background-image: url(https://image.ibb.co/fsDw0p/blake_connally_373084_unsplash.jpg );
+  background-size: cover;
+  background-position: center;
+  opacity: O.8px;
+
+}
+
+
+li {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  padding: 0 24px;
+  align-items: center;
+  min-height: 70px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  z-index: 1;
+
+}
+
+.nav-branding img {
+  height: 50px;
+
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+/* ---presentation---- */
+.presentation {
+  font-family: "Ogg-Roman";
+  /* background-image: url(assets/Codes\ -\ 23354.mp4); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30vw;
+  /* text-align: center; */
+}
+
+.animate__animated animate__backInLeft {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30vw;
+  font-family: "Ogg-Roman";
+}
+
+/* .animate__animated animate__backInRight {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30vw;
+  font-family: "Ogg-Roman";
+} */
+
+video {
+  opacity: 0.9;
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- FIN presentation---- */
+.competence {
+  /* margin-top: 80px; */
+  /* border: 3px solid #2687be;  */
+  font-family: "Ogg-Roman";
+  /* background-image: url(assets/esiee-it-formation-informatique.jpg);  */
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+}
+.competence img {
+height:50vw;
+
+}
+.competence p {
+
+  margin: 50px;
+}
+
+/* <!-- -------fin competence -------> */
+.titreProjets {
+  font-family: "Ogg-Roman";
+  margin-top: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+
+.projets {
+
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+img:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.projets-1 {
+  margin-bottom: 50px;
+  border: 3px solid #2687be;
+  height: 30%;
+  width: 30%;
+
+
+}
+
+/* fin .projets */
+/* formulaire  */
+.formulaire {
+  margin-top: 50px;
+  background-color: #2687be;
+
+}
+
+.page4 h1 {
+  margin-bottom: 400px;
+}
+
+.Contacteznous {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 0 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Contacteznous>h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.Contacteznous>p {
+  font-weight: 200;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+  margin-top: 25px;
+}
+
+form div>label {
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+form div>input,
+form div>select,
+form div>textarea {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 25);
+}
+
+form div>select {
+  appearance: none;
+  background-size: 15px;
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
+form div>textarea {
+  height: 195 px;
+  padding: 15px 0px 0px 10px;
+}
+
+form div>input::placeholder,
+form div>textarea::placeholder {
+  color: white;
+}
+
+form div>select:invalid {
+  color: white;
+}
+
+form div>select option {
+  background: transparent;
+  color: white;
+}
+
+form div:last-child {
+  align-items: center;
+  margin-top: 20px;
+}
+
+form button {
+  width: 50vw;
+  height: auto;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  background: white;
+  border: rgba(17, 16, 16, 0.5) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px white (0, 0, 0, 0.25);
+  color: black;
+
+
+}
+
+#ConditionsFormulaire {
+  text-align: center;
+  margin: 50px;
+}
+
+
+
+/* contact */
+.contact ul {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.contact img {
+  height: 50px;
+
+
+}
+
+/* fin contact */
+
+@media(max-width:1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0.8;
+    background-image: url(https://image.ibb.co/fsDw0p/blake_connally_373084_unsplash.jpg );
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/* -------------fin header-------------- */

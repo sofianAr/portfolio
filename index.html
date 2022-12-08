@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <script src="script.js" defer></script>
+  <title>sofian ariche</title>
+</head>
+
+<body>
+  <!-- cursor -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <!-- ------debut header--------- -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="nav-branding"><img src="logo/So.png" alt=""></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="." class="nav-link">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projets" class="nav-link">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a href="assets/CV-AricheSofian-2022.pdf" class="nav-link">Mon CV</a>
+          </li>
+          <li class="nav-item">
+            <a href="#formulaire" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- -------------fin header-------------- -->
+  <div class="presentation">
+    <div class="video-wrapper">
+      <video playsinline autoplay muted loop poster="Codes-23354.webm">
+        <source src="assets/Codes-23354.webm" type="video/webm">
+      </video>
+      <!-- <video playsinline autoplay muted loop poster="my-static-image.jpg">
+        <source src="my-video-url.webm" type="video/webm">
+        <source src="my-video-url.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+      <h1 class="animate__animated animate__backInLeft"> ARICHE SOFIAN </h1>
+      <!-- <h2 id=dev class="animate__animated animate__backInRight"> DEV WEB </h2> -->
+    </div>
+
+  </div>
+  <!-- ------- fin presentation ------- -->
+  <div class="competence">
+    <h2>MES COMPÉTENCES ET PARCOURS</h2>
+    <!-- <img src="assets/avatar2.png" alt="" srcset="" > -->
+    <p id="texteP">Développeur passionné dans le domaine du web, actuellement en formation développeur Web. Je conçois
+      et réalise
+      des sites web. Je développe également en JAVA et SWIFT, ce qui me permet de concevoir des applications mobiles
+      Apple et
+      Android. <br> J'ai quelques projets intéressants à consulter. <br> Vous souhaitez obtenir mon CV au format PDF
+      c'est par
+      ici. </p>
+  </div>
+  <!-- -------fin competence ------->
+  <!-- projets -->
+  <div id="projets" class="titreProjets">
+    <h2>MES PROJETS</h2>
+  </div>
+  <section class="projets">
+
+    <img class="projets-1" src="assets/code.jpg" alt="">
+    <img class="projets-1" src="assets/projet2.jpg" alt="">
+    <img class="projets-1" src="assets/projet3.png" alt="">
+
+  </section>
+  
+  <!-- fin projets -->
+  <!-- formulaire -->
+  <section id="formulaire" class="formulaire">
+
+    <section style="display: flex; justify-content: center;">
+      <div class="Contacteznous">
+        <h2></h2>
+
+        <form action="/page-traitement-donnees" method="post">
+          <div>
+            <label for="nom">Votre Nom</label>
+            <input type="text" id="nom" placeholder="Saisissez votre Nom" required>
+          </div>
+          <div>
+            <label for="email">Votre E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="monadressemail@mail.com" required>
+          </div>
+          <div>
+            <label for="sujet">Votre message ?</label>
+            <select name="sujet" id="sujet" required>
+              <option value="" disabled hidden>Choisissez le sujet de votre message</option>
+              <option value="Reservation-de-groupe">Pour un projets</option>
+              <option value="Reserver-le-Restaurant">Pour un stage</option>
+              <option value="Vos-remarques-suggestions">Vos Remarques & Suggestions</option>
+              <option value="Autres">Autres</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Votre Message</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car ....." required></textarea>
+          </div>
+          <div>
+            <button type="submit">Envoyer le message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </section>
+
+
+
+
+  <!--   contact -->
+  <section class="contact">
+    <ul>
+      <li class="git">
+        <a href="https://github.com/sofianAr" class="git-hub"><img src="logo/GitHub-Logo.png" alt=""></a>
+      </li>
+      <li class="link">
+        <a href="https://www.linkedin.com/in/sofian-ariche-a0b5a1259/" class="linkzdin"><img src="logo/logo-linkedin.png" alt=""></a>
+      </li>
+      <li class="insta">
+        <a href="mailto:ariche.sofian@gmail.com" class="mail"><img src="logo/Mail_(Apple)_logo.png" alt=""></a>
+      </li>
+    </ul>
+  </section>
+
+
+</body>
+
+</html>
