@@ -5,8 +5,10 @@
 
 body {
   background-color: black;
-  opacity: 0.9a;
+  /* opacity: 0.9a; */
 }
+
+
 
 /* cursor */
 
@@ -117,10 +119,12 @@ a {
 }
 
 /* ---presentation---- */
+
 .presentation {
-  font-family: "Ogg-Roman";
-  /* background-image: url(assets/Codes\ -\ 23354.mp4); */
-  color: white;
+  font-family: "Ogg-Romn";
+  text-align: center;
+  background-image: url(assets/esiee-it-formation-informatique.jpg);
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,30 +153,23 @@ a {
   font-family: "Ogg-Roman";
 } */
 
-video {
-  opacity: 0.9;
-  object-fit: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
 
-}
 
-.video-wrapper {
+
+/* .video-wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
   overflow: hidden;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* --- FIN presentation---- */
 .competence {
   /* margin-top: 80px; */
-  /* border: 3px solid #2687be;  */
+  border: 3px solid #2687be;
   font-family: "Ogg-Roman";
   /* background-image: url(assets/esiee-it-formation-informatique.jpg);  */
   background-color: black;
@@ -184,14 +181,30 @@ video {
   padding: 50px;
   color: white;
 }
+#imageText{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
 .competence img {
-height:50vw;
+width: 50%;
+  object-fit: cover;
+  height: 50vw;
+  
 
 }
-.competence p {
-
-  margin: 50px;
+#texteP{
+  text-align: justify ;
+  margin: auto;
+  padding: 15px;
+  line-height: 2;
+  font-size: 20px;
+  align-items: center;
+ display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
+
 
 /* <!-- -------fin competence -------> */
 .titreProjets {
@@ -210,24 +223,25 @@ height:50vw;
   justify-content: space-evenly;
 }
 
-img {
-  -webkit-transition: all 0.5s;
+/* 
+ .competence img { */
+/* -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
+  transition: all 0.5s; */
+/* } */
 
-img:hover {
-  transform: rotate3d(0, 1, 0, 180deg);
-}
+/* .competence img:hover {
+ 
+} */
 
 .projets-1 {
   margin-bottom: 50px;
   border: 3px solid #2687be;
   height: 30%;
   width: 30%;
-
+  transform: rotate3d(0, 1, 0, 180deg);
 
 }
 
@@ -406,3 +420,241 @@ form button {
 }
 
 /* -------------fin header-------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Source+Code+Pro');
+/* // font-family: 'Source Code Pro', monospace;
+// font-family: 'Orbitron', sans-serif; */
+
+
+#language {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  /* background-color: #262626;  */
+}
+
+.center {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  width: 50%;
+  position: center;
+  top: 50%;
+  left: 50%; 
+  /* transform: translate(-50%, -50%); */
+  padding: 25px;
+  /* background-color: #111111; */
+  box-sizing: border-box;
+  border: 1px solid #2687be;
+  border-radius: 5px;
+  /* box-shadow: 0 20px 50px #000; */
+}
+
+.centerh1 {
+  font-size: 30px;
+  margin: 10px 0 30px 0;
+  padding: 0;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: animateText 2s infinite;
+  /* // text-shadow: 0 0 10px greenyellow; */
+}
+
+
+@keyframes animateText {
+  0% {
+    text-shadow: 0 0 0px #2687be;
+  }
+
+  25% {
+    text-shadow: 0 0 2px #2687be;
+  }
+
+  50% {
+    text-shadow: 0 0 5px #2687be;
+  }
+
+  75% {
+    text-shadow: 0 0 7px #2687be;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #2687be;
+  }
+}
+
+.skill-container {
+  margin: 20px 0 0 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.skill-container p {
+  margin: 0 0 5px 0;
+  color: #2687be;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2687be;
+}
+
+.skill-container p:nth-child(2) {
+  float: right;
+  position: relative;
+  top: -26px;
+}
+
+.skill-bar {
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid #2687be;
+  border-radius: 3px;
+}
+
+.skill-level {
+  height: 5px;
+  background-color: #2687be;
+  border-radius: 1px
+}
+
+
+.html {
+  width: 56%;
+  animation: html 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 56%;
+  }
+}
+
+
+.css {
+  width: 48%;
+  animation: css 2s;
+}
+
+@keyframes css {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 48%;
+  }
+}
+
+.sass {
+  width: 17%;
+  animation: sass 2s ease-in;
+}
+
+@keyframes sass {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 17%;
+  }
+}
+
+
+.js {
+  width: 28%;
+  animation: js 2s ease-out;
+}
+
+@keyframes js {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 28%;
+  }
+}
+
+
+.sql {
+  width: 18%;
+  animation: sql 2s;
+}
+
+@keyframes sql {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 18%;
+  }
+}
+
+
+.php {
+  width: 34%;
+  animation: php 2s;
+}
+
+@keyframes php {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 34%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 15px;
+  }
+}
