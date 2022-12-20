@@ -237,12 +237,16 @@ width: 50%;
 } */
 
 .projets-1 {
-  margin-bottom: 50px;
+  object-fit: cover;
   border: 3px solid #2687be;
   height: 30%;
   width: 30%;
-  transform: rotate3d(0, 1, 0, 180deg);
+  /* transform: rotate3d(0, 1, 0, 180deg); */
 
+}
+
+.projets-1 img{
+  width: 100%;
 }
 
 /* fin .projets */
